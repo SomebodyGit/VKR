@@ -56,10 +56,10 @@ class RouteFinder:
 
     def train_agent(self):
         self.Q = {node: {act: 0.0 for act in self.graph_dict[node]} for node in self.graph_dict}
-        learning_rate = 0.1
-        discount_factor = 0.9
+        learning_rate = 0.13
+        discount_factor = 0.89
         num_episodes = 10000
-        epsilon = 0.1
+        epsilon = 0.01
         episode_rewards = []
 
         for episode in range(num_episodes):
